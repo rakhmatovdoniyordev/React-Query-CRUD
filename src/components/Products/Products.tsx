@@ -82,9 +82,9 @@ export default function Products() {
     e.preventDefault();
 
     if (editingFood) {
-      updateMutation.mutate(editingFood); // Faqat tahrirlanayotgan ma’lumotni yuboradi
+      updateMutation.mutate(editingFood);
     } else {
-      createMutation.mutate(newFood); // Faqat yangi ma’lumotni yuboradi
+      createMutation.mutate(newFood);g
     }
 
     setNewFood({ title: "", desc: "", price: 0, oldprice: 0, url: "" });
