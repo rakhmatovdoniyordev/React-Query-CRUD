@@ -84,7 +84,7 @@ export default function Products() {
     if (editingFood) {
       updateMutation.mutate(editingFood);
     } else {
-      createMutation.mutate(newFood);g
+      createMutation.mutate(newFood);
     }
 
     setNewFood({ title: "", desc: "", price: 0, oldprice: 0, url: "" });
